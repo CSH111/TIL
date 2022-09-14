@@ -76,7 +76,7 @@ function BoxArea() {
 }
 ```
 
-`handleClick` 대신 일반적인 함수 이름을 사용한다.
+`handle + 기능` .
 
   <br>
 
@@ -88,7 +88,7 @@ function BoxArea() {
     <br>
 
 - 단점
-  - 함수만 봤을 때 어떤 이벤트종류에 의해 실행되는지 알 수 없다.
+  - 함수만 봤을 때 어떤 이벤트종류(click인지 mouseEnter인지)에 의해 실행되는지 알 수 없다.
 
 <br>
 <br>
