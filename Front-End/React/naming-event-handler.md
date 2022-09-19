@@ -2,7 +2,7 @@
 
 <br>
 
-## 컨벤션1 - handleClick
+## 컨벤션1 - handleClick (~handler)
 
 <br>
 
@@ -18,6 +18,7 @@ function BoxArea() {
 
 `onClick` 은 이벤트의 실행 트리거(실행 시점)을 의미한다. `on + 트리거`  
 `handleClick` 은 이벤트 이후 작동할 함수의 이름이다.  
+이것과 거의 비슷하게 `clickHandler` 라는 이름을 사용하기도 한다.
 <br>
 
 - 장점
@@ -72,11 +73,11 @@ function BoxArea() {
     // .....창 닫는 로직...
     // .....창 닫는 로직...
   };
-  return <div onClick={handleCloseBox}></div>;
+  return <div onClick={handleBoxClose}></div>;
 }
 ```
 
-`handle + 기능` .
+`handle + action(명사+동사 or 명사형)` .
 
   <br>
 
@@ -95,7 +96,7 @@ function BoxArea() {
 
 개인적으로 컨벤션3이 가장 마음에 든다.
 
-`handleClick` 이 가장 익숙하지만 사용할 수록 가독성이 떨어지는 상황이 생기곤 했는데 그걸 해결해주는 방식인듯 하다.
+`handleClick` 이 가장 익숙하지만 종종 가독성이 떨어지는 상황이 생기기도 했는데 그걸 어느정도 해결해주는 방식인듯 하다.
 <br>
 <br>
 
