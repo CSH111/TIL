@@ -2,7 +2,7 @@
 
 ## 1. 자기 의존적 state
 
-직전의 state를 반영하여 state를 변화시킬 때 setState의 인자로 콜백을 사용하는것이 가장 안전한 방법이다. 최신을 보장하지 않음
+직전의 state를 반영하여 state를 변화시킬 때 setState의 인자로 콜백을 사용하는것이 가장 안전한 방법이다. 최신을 보장함
 
 ```jsx
 function App() {
