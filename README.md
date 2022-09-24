@@ -2,8 +2,10 @@
 
 - 자바스크립트
 
-  - 클린코드 - [배열 메소드 사용팁](https://github.com/CSH111/TIL/blob/master/JavaScript/clean-code/array-method.md)  
-    <br>
+  - 클린코드
+    - [배열 메소드 사용팁](https://github.com/CSH111/TIL/blob/master/JavaScript/clean-code/array-method.md)
+    - [forEach 메소드 break 시키기](https://github.com/CSH111/TIL/blob/master/JavaScript/clean-code/break-forEach.md)  
+      <br>
 
 - 프론트엔드
   - CSS

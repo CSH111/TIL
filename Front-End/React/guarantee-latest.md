@@ -9,12 +9,12 @@ function App() {
   const [num, setNum] = useState(1);
 
   useEffect(() => {
-    setNum(num + 1);
-    setNum(num + 1);
-  }, []);
+    setNum(num + 1); // 스케쥴- 1: setNum(2)
+    setNum(num + 1); // 스케쥴- 2: setNum(2)
+  }, []); //  스케쥴 1,2 진행 후 App 1회 렌더링
 
   const handleClick = () => {
-    console.log(num); // 출력: 2,   렌더링 스케쥴때문
+    console.log(num); // 출력: 2
   };
 }
 ```
