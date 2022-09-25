@@ -1,5 +1,7 @@
 # array 메소드 사용 형식
 
+파라미터를 객체형태로 받으면 가독성이 좋아지는 경우가 많다.
+
 ```js
 const arr = [
   [1, 2],
@@ -12,4 +14,21 @@ const arr = [
 const newArr = arr.map(([a, b]) => b); //새로 알게된형식. 가독성 훨씬 졸음
 
 console.log(newArr); //출력: [2, 4, 6]
+```
+
+## 응용
+
+함수만들때에도 유용
+
+```js
+function BadFn(arr) {
+  const first = arr[0];
+  const second = arr[1];
+  // ....
+}
+// 가독성 별로
+
+function goodFn([first, second]) {
+  //...
+}
 ```
