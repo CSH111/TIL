@@ -9,8 +9,8 @@ function App() {
   const [num, setNum] = useState(1);
 
   useEffect(() => {
-    setNum(num + 1); // 스케쥴- 1: setNum(2)
-    setNum(num + 1); // 스케쥴- 2: setNum(2)
+    setNum(num + 1); // 스케쥴1: setNum(2)
+    setNum(num + 1); // 스케쥴2: setNum(2)
   }, []); //  스케쥴 1,2 진행 후 App 1회 렌더링
 
   const handleClick = () => {
@@ -25,7 +25,7 @@ function App() {
 
   useEffect(() => {
     setNum(num + 1);
-    setNum((prev) => prev + 1); //prev 는 최신의 num을 보장
+    setNum((_num) => _num + 1); //prev 는 최신의 num을 보장
   }, []);
 
   const handleClick = () => {
@@ -36,11 +36,72 @@ function App() {
 
 ## 2. 다른 state에 의존적인 state
 
-다른 state에 의존해서 자신의 state가 변화하는 것은 최신의 state를 보장하지 못할 가능성이 큼
+다른 state에 의존해서 자신의 state가 변화하는 것은 최신의 state를 보장하지 못할 수 있음
+
+```jsx
+function App() {
+  const [firstName, setFirstName] = useState("성호");
+  const [lastName, setLastName] = useState("조");
+  const [fullName, setFullName] = useState(firstName + " " + lastName); //다른 스테이트에 의존적
+
+  const handleLastNameChange = () => {
+    // click! => lastName은 "박"
+    setLastName("박");
+  };
+
+  const handleConsole = () => {
+    //click! => 출력: "성호 조", 최신보장 x
+    console.log(fullName);
+  };
+}
+```
 
 <br>
 
 ## 2-1 useEffect의 의존성 배열 이용하여 최신화 보장
+
+```jsx
+function App() {
+  const [firstName, setFirstName] = useState("성호");
+  const [lastName, setLastName] = useState("조");
+  const [fullName, setFullName] = useState(firstName + " " + lastName); //다른 스테이트에 의존적
+
+  useEffect(() => {
+    setFullName(firstName + " " + lastName);
+  }, [lastName, firstName]); // 최신성 보장
+
+  const handleLastNameChange = () => {
+    // click! => lastName은 "박"
+    setLastName("박");
+  };
+
+  const handleConsole = () => {
+    //click! => 출력: "성호 박"
+    console.log(fullName);
+  };
+}
+```
+
+## 2-2 일반 선언
+
+직접 state를 변화시킬 일이 없다면 바닐라에서 선언하듯이 선언하고 사용할 수 있다.
+
+```jsx
+function App() {
+  const [firstName, setFirstName] = useState("성호");
+  const [lastName, setLastName] = useState("조");
+  const realFullName = firstName + " " + lastName;
+
+  const handleLastNameChange = () => {
+    // click! => lastName은 "박"
+    setLastName("박");
+  };
+
+  const handleConsole = () => {
+    console.log(realFullName); //출력: "성호 박"
+  };
+}
+```
 
 <br>
 

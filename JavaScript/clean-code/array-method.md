@@ -9,9 +9,9 @@ const arr = [
   [5, 6],
 ];
 
-//const newArr = arr.map((item) => item[1]) 평소쓰던거
+const newArr1 = arr.map((item) => item[1]); // 평소쓰던거
 
-const newArr = arr.map(([a, b]) => b); //새로 알게된형식. 가독성 훨씬 졸음
+const newArr2 = arr.map(([a, b]) => b); //새로 알게된형식. 가독성 good
 
 console.log(newArr); //출력: [2, 4, 6]
 ```
@@ -31,4 +31,5 @@ function BadFn(arr) {
 function goodFn([first, second]) {
   //...
 }
+//가독성 good
 ```
