@@ -4,7 +4,7 @@
 
 1.  [제작배경](#제작배경)
 2.  [사용법](#사용예)
-3.  [로직](#로직)
+3.  [내부로직](#내부로직)
 4.  [referance](#referance)
 
 <br>
@@ -32,11 +32,13 @@ import Input from "./ReusableForm/Input";
 
 const LoginForm = () => {
   const handleSubmit = (context) => {
-    // submit 후 밸류 처리로직
+    // submit 후 밸류 처리 방법
+
     //  - context를 간접적으로 조작
     //  - context가 위치한 개별 Form으로 context 처리함수 전송
 
-    // context.values 로 값 이용가능
+    // context.values 로 input value 이용
+    //ex) axios.post("/api/...", context.values)
     console.log(context.values);
 
     // 모든 인풋 value 비우기 1
@@ -49,7 +51,9 @@ const LoginForm = () => {
     context.setValues((values) => ({ ...values, pw: "" }));
   };
 
-  // Input의 label prop으로 라벨 생성
+  // Input의 label prop으로 라벨 생성X
+  // name prop필수
+  // value 컨트롤은 자동화 되어있음
   return (
     <Form onSubmit={handleSubmit}>
       <Input label="이메일" id="email" name="email" type="text" />
@@ -62,12 +66,12 @@ const LoginForm = () => {
 export default LoginForm;
 ```
 
-사용이 간편해지긴 했다. ( + 스타일드 컴포넌트도 이용가능)  
-`handleSubmit`의 첫 번째 인자로 context를 컨트롤 할 수 있다.
+- `handleSubmit`의 첫 번째 인자로 context를 컨트롤 할 수 있다.
+- 스타일드 컴포넌트 이용가능
 
 <br>
 
-## 로직
+## 내부로직
 
 ```jsx
 // ReusableForm/Form.js
