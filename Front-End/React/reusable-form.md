@@ -29,8 +29,10 @@ value 컨트롤이 너무 귀찮아서 form 을 재사용 가능하도록 편하
 
 import { Form } from "./ReusableForm/Form";
 import Input from "./ReusableForm/Input";
+import { useRef } from "react";
 
 const LoginForm = () => {
+  const emailInput = useRef();
   const handleSubmit = (context) => {
     // submit 후 밸류 처리 방법
 
@@ -40,6 +42,7 @@ const LoginForm = () => {
     // context.values 로 input value 이용
     //ex) axios.post("/api/...", context.values)
     console.log(context.values);
+    emailInput.current.focus(); // ref 이용
 
     // 모든 인풋 value 비우기 1
     context.setValues({});
@@ -56,8 +59,19 @@ const LoginForm = () => {
   // value 컨트롤은 자동화 되어있음
   return (
     <Form onSubmit={handleSubmit}>
-      <Input label="이메일" id="email" name="email" type="text" />
-      <Input label="비밀번호" id="pw" name="pw" type="password" />
+      <Input
+        label="이메일"
+        id="email"
+        name="email"
+        type="text"
+        ref={emailInput}
+      />
+      <Input
+        label="비밀번호" //
+        id="pw"
+        name="pw"
+        type="password"
+      />
       <button type="submit">제출</button>
     </Form>
   );
@@ -111,12 +125,13 @@ export { Form, FormContext };
 
 ```jsx
 // ReusableForm/Input.js
+import React from "react";
 import { useContext, useEffect } from "react";
 import { FormContext } from "./Form";
 
 // context로 value 컨트롤
 
-const Input = (props) => {
+const Input = React.forwardRef((props, ref) => {
   const formCtx = useContext(FormContext);
   const valueInContext = formCtx.values[props.name] ?? "";
 
@@ -145,10 +160,11 @@ const Input = (props) => {
         type={props.type}
         onChange={handleChange}
         value={valueInContext}
+        ref={ref}
       />
     </div>
   );
-};
+});
 
 export default Input;
 ```
