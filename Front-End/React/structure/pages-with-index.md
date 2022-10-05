@@ -1,5 +1,3 @@
-│───
-
 # pages 폴더 구조의 예시(index 이용)
 
 ## 폴더내부의 index.js
