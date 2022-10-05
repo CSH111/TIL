@@ -13,7 +13,7 @@
       <br>
   - 리액트
     - 스트럭쳐
-      - [pages 폴더구조(index활용)](https://github.com/CSH111/TIL/blob/master/Front-End/React/pages-with-index.md)  
+      - [pages 폴더구조(index활용)](https://github.com/CSH111/TIL/blob/master/Front-End/React/structure/pages-with-index.md)  
         <br>
     - [이벤트 핸들러 네이밍](https://github.com/CSH111/TIL/blob/master/Front-End/React/naming-event-handler.md)
     - [삼항연산자의 대안](https://github.com/CSH111/TIL/blob/master/Front-End/React/ternary-operator.md)
