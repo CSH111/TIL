@@ -18,10 +18,10 @@
 
   - CSS - [초기설정](https://github.com/CSH111/TIL/blob/master/Front-End/css/reset.md)
 
-  <details open>
+  <details>
     <summary>리액트</summary>
 
-    <details open>
+    <details>
       <summary>스트럭쳐</summary>
     
     - [pages 폴더구조(index활용)](https://github.com/CSH111/TIL/blob/master/Front-End/React/structure/pages-with-index.md)
@@ -38,6 +38,7 @@
   - [커스텀 컴포넌트의 ref](https://github.com/CSH111/TIL/blob/master/Front-End/React/forwardRef.md)
   - [reusable 폼 제작기(context 이용)](https://github.com/CSH111/TIL/blob/master/Front-End/React/reusable-form.md)
   - [레이아웃 by Route](https://github.com/CSH111/TIL/blob/master/Front-End/React/layout-with-router.md)
+  - [리덕스 툴킷](https://github.com/CSH111/TIL/blob/master/Front-End/React/redux-toolkit.md)
 
   </details>
 
