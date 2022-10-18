@@ -40,6 +40,11 @@ const authSlice = createSlice({
     logout(state) {
       state.isAuthenticated = false;
     },
+
+    //두번째 인자로 사용하는곳으로부터 데이터를 받아올 수있다.
+    someFn(state, action) {
+      console.log(action.payload); //action.payload에 담겨옴
+    },
   },
 });
 
@@ -130,6 +135,7 @@ const Auth = () => {
 
   const submitHandler = (e) => {
     dispatch(login());
+    dispatch(someFn({ data: "data" })); // payload 전송
   };
   return <form onSubmit={(e) => submitHandler(e)}>{/* ... */}</form>;
 };
