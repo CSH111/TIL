@@ -15,16 +15,32 @@
 <br>
 
 - 프론트엔드
+  <details>
+      <summary>CSS</summary>
+    
+     - [초기설정](https://github.com/CSH111/TIL/blob/master/Front-End/css/reset.md)
 
-  - CSS - [초기설정](https://github.com/CSH111/TIL/blob/master/Front-End/css/reset.md)
+    <br>
+
+   </details>
 
   <details>
     <summary>리액트</summary>
+    <details>
+      <summary>리덕스</summary>
+    
+     - [리덕스 툴킷](https://github.com/CSH111/TIL/blob/master/Front-End/React/redux/redux-toolkit.md)
+     - [리덕스 비동기](https://github.com/CSH111/TIL/blob/master/Front-End/React/redux/redux-toolkit-async.md)
+
+    <br>
+
+   </details>
 
     <details>
       <summary>스트럭쳐</summary>
     
     - [pages 폴더구조(index활용)](https://github.com/CSH111/TIL/blob/master/Front-End/React/structure/pages-with-index.md)
+
     <br>
 
    </details>
@@ -38,8 +54,8 @@
   - [커스텀 컴포넌트의 ref](https://github.com/CSH111/TIL/blob/master/Front-End/React/forwardRef.md)
   - [reusable 폼 제작기(context 이용)](https://github.com/CSH111/TIL/blob/master/Front-End/React/reusable-form.md)
   - [레이아웃 by Route](https://github.com/CSH111/TIL/blob/master/Front-End/React/layout-with-router.md)
-  - [리덕스 툴킷](https://github.com/CSH111/TIL/blob/master/Front-End/React/redux-toolkit.md)
 
   </details>
 
-추가할거 라우터돔항목 -> 레이아웃, private route
+<br><br><br>
+추가할거 라우터돔항목 -> private route
