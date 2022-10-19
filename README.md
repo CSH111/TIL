@@ -24,9 +24,12 @@
 
    </details>
 
-  <details>
+  <details open>
     <summary>리액트</summary>
-    <details>
+
+    <br>
+
+    <details open>
       <summary>리덕스</summary>
     
      - [리덕스 툴킷](https://github.com/CSH111/TIL/blob/master/Front-End/React/redux/redux-toolkit.md)
@@ -54,6 +57,7 @@
   - [커스텀 컴포넌트의 ref](https://github.com/CSH111/TIL/blob/master/Front-End/React/forwardRef.md)
   - [reusable 폼 제작기(context 이용)](https://github.com/CSH111/TIL/blob/master/Front-End/React/reusable-form.md)
   - [레이아웃 by Route](https://github.com/CSH111/TIL/blob/master/Front-End/React/layout-with-router.md)
+  - [글로벌 스타일 및 리셋](https://github.com/CSH111/TIL/blob/master/Front-End/React/default-global-style.md)
 
   </details>
 

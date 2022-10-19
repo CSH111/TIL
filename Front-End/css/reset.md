@@ -1,4 +1,4 @@
-# css 초기화
+# css 초기화(Eric Meyer)
 
 ```css
 html, body, div, span, applet, object, iframe,
@@ -49,6 +49,17 @@ table {
    v2.0 | 20110126
    License: none (public domain)
 */
+
+```
+
+```css
+/* 추가 설정 */
+* {
+  box-sizing: border-box;
+}
+a {
+  color: black;
+}
 ```
 
 ## ref
