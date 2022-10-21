@@ -24,12 +24,12 @@
 
    </details>
 
-  <details open>
+  <details>
     <summary>리액트</summary>
 
     <br>
 
-    <details open>
+    <details>
       <summary>리덕스</summary>
     
      - [리덕스 툴킷](https://github.com/CSH111/TIL/blob/master/Front-End/React/redux/redux-toolkit.md)
@@ -59,7 +59,19 @@
   - [레이아웃 by Route](https://github.com/CSH111/TIL/blob/master/Front-End/React/layout-with-router.md)
   - [글로벌 스타일 및 리셋](https://github.com/CSH111/TIL/blob/master/Front-End/React/default-global-style.md)
 
+<br>
+
+- Tools
+  <details>
+      <summary>git</summary>
+    
+     - [기본 명령어](https://github.com/CSH111/TIL/blob/master/Tools/git/git-basic.md)
+
+    <br>
+
+   </details>
   </details>
 
 <br><br><br>
-추가할거 라우터돔항목 -> private route
+추가할거 라우터돔항목 -> private route  
+HTML input 태그 pattern, required(+ autofocus) 속성 및 WEP API validation 연계 + css 가상성택자 :valid, :invalid
