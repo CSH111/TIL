@@ -66,6 +66,7 @@
       <summary>git</summary>
     
      - [기본 명령어](https://github.com/CSH111/TIL/blob/master/Tools/git/git-basic.md)
+     - [merge](https://github.com/CSH111/TIL/blob/master/Tools/git/merge.md)
 
     <br>
 
