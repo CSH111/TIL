@@ -78,6 +78,106 @@ function App() {
 
 <br>
 
-## createAsyncThunk
+## createAsyncThunk 이용하기
 
-... 작성중 ...
+위 처럼 직접 생성한 액션에서 로직에 따라 직접 dispatch 하는 것은 경우에 따라 바람직하지 않을 수 있음.
+
+`createAsyncThunk`를 이용해 데이터를 fetch해오는등 최소한의 비동기 작업만들 분리해놓고 그에따른 후속작업은 개별 슬라이스 `extraReducer`에 쉽게 작성해 놓을 수 있음.
+
+```jsx
+// store/cart-actions.js
+
+import { createAsyncThunk } from "@reduxjs/toolkit";
+
+const getCartData = createAsyncThunk("GET_CART_DATA", async () => {
+  const res = await axios.get("/cart.json");
+  return res.data; //리턴값은 바로 payLoad에 담김
+
+  // 핵심로직 및 에러 처리시 개별 담당 슬라이스에 디스패치하는것이아니라
+  // 개별 슬라이스 내부에서 미리 정의가능
+});
+// ...
+
+export { getCartData };
+```
+
+```jsx
+// store/cartSlice.js, 핵심로직처리(get 후 items에 넣기)
+
+import { getCartData } from "./cart-actions";
+
+const initialState = {
+  items: [], //...
+};
+const cartSlice = createSlice({
+  name: "cart",
+  initialState,
+  reducers: {
+    //...
+  },
+  //비동기 액션에 대해 pending, fulfilled, rejected 상태에 대한 후속 작업을 정의할 수 있다.
+  extraReducers: (builder) => {
+    builder.addCase(getCartData.fulfilled, (state, action) => {
+      //createThunk 내부의 함수 리턴값은 actions.payload에 담김
+      state.items = action.payload.items;
+      //...
+    });
+  },
+});
+//...
+```
+
+```jsx
+// store/uiSlice.js   , getCartData의 송신상태표시 로직(ui)
+
+import { getCartData } from "./cart-actions";
+
+const uiSlice = createSlice({
+  name: "ui",
+  initialState: { notification: null },
+  reducers: {
+    // ...
+  },
+  extraReducers: (builder) => {
+    builder.addCase(getCartData.pending, (state, action) => {
+      state.notification = {
+        status: "pending",
+        title: "pending...",
+        message: "pending sending cart data...",
+      };
+    });
+    builder.addCase(getCartData.fulfilled, (state, action) => {
+      state.notification = {
+        status: "success",
+        title: "success!",
+        message: "success sending cart data!",
+      };
+    });
+    builder.addCase(getCartData.rejected, (state, action) => {
+      state.notification = {
+        status: "error",
+        title: "error!",
+        message: "error sending cart data",
+      };
+    });
+  },
+});
+```
+
+```jsx
+// App.js
+import { getCartData } from "./ui-actions";
+
+function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getCartData());
+    // extra리듀서 정의시 콜백인자의 action.payload에 해당 액션의 리턴값이 들어간다.
+    // 만약 여기서  argument를 넣는다면 action.args에 들어가게 된다.
+    //일반 커스텀 액션 및 리듀서의 자동 생성 액션과는 다른 createThunk의 특징이라면 특징..
+  }, []);
+
+  return <>...</>;
+}
+```

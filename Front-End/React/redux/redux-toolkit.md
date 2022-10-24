@@ -142,3 +142,42 @@ const Auth = () => {
 
 export default Auth;
 ```
+
+<br>
+
+## 5. 외부 슬라이스 상태의 영향 받는 슬라이스
+
+```jsx
+// src/store/items.js
+
+import authActions from "./auth";
+
+// slice는 리덕스 스토어를 여러개로 분리시켜 관리할 수 있게해준다.
+// 초기 상태와 actions를 정의한다
+// type별  reducers들을 하나로 통합해 생성해준다. 그걸 export해 store/index 에서 스토어 생성에 이용
+
+const { logout } = authActions;
+
+const itemSlice = createSlice({
+  name: "items",
+  initialState: { items: [] },
+  reducers: {
+    // add item...
+    // remove item...
+  },
+  extraReducer: (builder) => {
+    //외부리듀서 반응
+    builder.addCase(logout, (state, action) => {
+      state.items = []; //logout시 아이템 비우기
+    });
+    // builder.addCase ...
+    // builder.addCase ...
+  },
+});
+
+export default itemSlice.reducer;
+```
+
+```
+
+```
