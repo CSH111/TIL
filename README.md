@@ -8,6 +8,7 @@
   - [배열 메소드 사용팁](https://github.com/CSH111/TIL/blob/master/JavaScript/clean-code/array-method.md)
   - [|| vs ??](https://github.com/CSH111/TIL/blob/master/JavaScript/clean-code/or-vs-nullish-coalescing.md)
   - [isNaN vs Number.isNaN](https://github.com/CSH111/TIL/blob/master/JavaScript/clean-code/number-isNaN.md)
+  - [문자열 전개구문](https://github.com/CSH111/TIL/blob/master/JavaScript/clean-code/string-spread-operator.md)
 
   </details>
 
