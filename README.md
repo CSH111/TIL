@@ -56,8 +56,6 @@
 
    </details>
 
-  ***
-
   - [이벤트 핸들러 네이밍](https://github.com/CSH111/TIL/blob/master/Front-End/React/naming-event-handler.md)
   - [삼항연산자의 대안](https://github.com/CSH111/TIL/blob/master/Front-End/React/ternary-operator.md)
   - [디바운싱 with useEffect](https://github.com/CSH111/TIL/blob/master/Front-End/React/useEffect-debouncing.md)
@@ -70,16 +68,22 @@
 <br>
 
 - Tools
-  <details>
-      <summary>git</summary>
-    
-     - [기본 명령어](https://github.com/CSH111/TIL/blob/master/Tools/git/git-basic.md)
-     - [merge](https://github.com/CSH111/TIL/blob/master/Tools/git/merge.md)
-     - [협업, 깃허브](https://github.com/CSH111/TIL/blob/master/Tools/git/colaboration.md)
+    <details>
+        <summary>git</summary>
+      
+       - [기본 명령어](https://github.com/CSH111/TIL/blob/master/Tools/git/git-basic.md)
+       - [merge](https://github.com/CSH111/TIL/blob/master/Tools/git/merge.md)
+       - [협업, 깃허브](https://github.com/CSH111/TIL/blob/master/Tools/git/colaboration.md)
 
-    <br>
+      <br>
 
-   </details>
+     </details>
+    </details>
+
+    <details>
+    <summary>etc</summary>
+
+  - [eslint](https://github.com/CSH111/TIL/blob/master/Tools/etc/eslint.md)
   </details>
 
 <br>
