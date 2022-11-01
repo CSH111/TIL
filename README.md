@@ -78,17 +78,19 @@
 <br>
 
 - Tools
+
     <details>
-        <summary>git</summary>
-      
-       - [기본 명령어](https://github.com/CSH111/TIL/blob/main/Tools/git/git-basic.md)
-       - [merge](https://github.com/CSH111/TIL/blob/main/Tools/git/merge.md)
-       - [협업, 깃허브](https://github.com/CSH111/TIL/blob/main/Tools/git/colaboration.md)
 
-      <br>
+    <summary>git</summary>
 
-     </details>
+  - [기본 명령어](https://github.com/CSH111/TIL/blob/main/Tools/git/git-basic.md)
+  - [merge](https://github.com/CSH111/TIL/blob/main/Tools/git/merge.md)
+  - [협업, 깃허브](https://github.com/CSH111/TIL/blob/main/Tools/git/colaboration.md)
+
+    <br>
+
     </details>
+    <!-- </details> -->
 
     <details>
     <summary>etc</summary>
