@@ -23,6 +23,16 @@
 <br>
 
 - 프론트엔드
+
+  <details>
+      <summary>Browser API</summary>
+    
+     - [intersection-observer](https://github.com/CSH111/TIL/blob/main/Front-End/browser-api/intersection-observer.md)
+
+    <br>
+
+   </details>
+
   <details>
       <summary>CSS</summary>
     
