@@ -17,6 +17,7 @@
 
   - [forEach 메소드 break 시키기](https://github.com/CSH111/TIL/blob/main/JavaScript/etc/break-forEach.md)
   - [tilt 연산자](https://github.com/CSH111/TIL/blob/main/JavaScript/etc/tilt.md)
+  - [Date 객체 및 활용](https://github.com/CSH111/TIL/blob/main/JavaScript/etc/date-object.md)
 
   </details>
 
@@ -112,5 +113,8 @@
   </details>
 
 <br><br><br>
-추가할거 라우터돔항목 -> private route  
-HTML input 태그 pattern, required(+ autofocus) 속성 및 WEP API validation 연계 + css 가상성택자 :valid, :invalid
+
+- 추가할거
+  - 라우터돔항목 -> private route
+  - HTML input 태그 pattern, required(+ autofocus) 속성 및 WEP API validation 연계 + css 가상성택자 :valid, :invalid
+  - 상수파일 잠그기
