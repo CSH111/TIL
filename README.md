@@ -32,7 +32,7 @@
 
     <br>
 
-   </details>
+  </details>
 
   <details>
       <summary>CSS</summary>
@@ -41,31 +41,26 @@
 
     <br>
 
-   </details>
+  </details>
+
+  <details>
+    <summary>리덕스</summary>
+
+  - [리덕스 툴킷](https://github.com/CSH111/TIL/blob/main/Front-End/React/redux/redux-toolkit.md)
+  - [리덕스 툴킷 비동기](https://github.com/CSH111/TIL/blob/main/Front-End/React/redux/redux-toolkit-async.md)
+
+  <br>
+
+  </details>
 
   <details>
     <summary>리액트</summary>
 
-    <br>
+  - 스트럭쳐
 
-    <details>
-      <summary>리덕스</summary>
-    
-     - [리덕스 툴킷](https://github.com/CSH111/TIL/blob/main/Front-End/React/redux/redux-toolkit.md)
-     - [리덕스 툴킷 비동기](https://github.com/CSH111/TIL/blob/main/Front-End/React/redux/redux-toolkit-async.md)
-
-    <br>
-
-   </details>
-
-    <details>
-      <summary>스트럭쳐</summary>
-    
     - [pages 폴더구조(index활용)](https://github.com/CSH111/TIL/blob/main/Front-End/React/structure/pages-with-index.md)
 
     <br>
-
-   </details>
 
   - [이벤트 핸들러 네이밍](https://github.com/CSH111/TIL/blob/main/Front-End/React/naming-event-handler.md)
   - [삼항연산자의 대안](https://github.com/CSH111/TIL/blob/main/Front-End/React/ternary-operator.md)
@@ -76,28 +71,39 @@
   - [레이아웃 by Route](https://github.com/CSH111/TIL/blob/main/Front-End/React/layout-with-router.md)
   - [글로벌 스타일 및 리셋](https://github.com/CSH111/TIL/blob/main/Front-End/React/default-global-style.md)
 
+  <br>
+
+  </details>
+
+  <details>
+      <summary>etc</summary>
+    
+     - [axios, fetch API의 에러처리](https://github.com/CSH111/TIL/blob/main/Front-End/etc/fetch-axios-error.md)
+
+    <br>
+  </detail>
+
 <br>
 
 - Tools
 
     <details>
 
-      <summary>git</summary>
+    <summary>git</summary>
 
-      - [기본 명령어](https://github.com/CSH111/TIL/blob/main/Tools/git/git-basic.md)
-      - [merge](https://github.com/CSH111/TIL/blob/main/Tools/git/merge.md)
-      - [협업, 깃허브](https://github.com/CSH111/TIL/blob/main/Tools/git/colaboration.md)
+  - [기본 명령어](https://github.com/CSH111/TIL/blob/main/Tools/git/git-basic.md)
+  - [merge](https://github.com/CSH111/TIL/blob/main/Tools/git/merge.md)
+  - [협업, 깃허브](https://github.com/CSH111/TIL/blob/main/Tools/git/colaboration.md)
 
-      <br>
+    <br>
 
     </details>
-    <!-- </details> -->
 
     <details>
     <summary>etc</summary>
 
-  - [eslint](https://github.com/CSH111/TIL/blob/main/Tools/etc/eslint.md)
-  </details>
+    - [eslint](https://github.com/CSH111/TIL/blob/main/Tools/etc/eslint.md)
+    </details>
 
 <br>
 
