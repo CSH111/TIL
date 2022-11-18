@@ -91,6 +91,8 @@
 
   - [CORS이슈 in 리액트 노드 프로젝트](https://github.com/CSH111/TIL/blob/main/CS/Network/cors-in-react-node.md)
 
+  - [서버의 기초 흐름](https://github.com/CSH111/TIL/blob/main/CS/Network/network-basic-server.md)
+
   </details>
 
 <br><br><br>

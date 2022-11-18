@@ -20,7 +20,7 @@ git branch -D 삭제할 브랜치 // 머지 안했어도 강제삭제
 
 ## fast-forward merge
 
-![fast-forward](../../img/fast-forward.JPG)
+<img src="../../img/git/fast-forward.JPG" />
 
 - 새 브랜치를 생성한뒤 메인에서 더 이상의 커밋이 없는 상황.
 - 충돌이 일어나지 않고 새 브랜치의 커밋이 메인으로 그대로 반영된다.
@@ -33,7 +33,7 @@ git branch -D 삭제할 브랜치 // 머지 안했어도 강제삭제
 
 ## 3-way merge
 
-![3way](../../img/3way.JPG)
+<img src="../../img/git/3way.JPG" />
 
 - 새 브랜치와 메인 모두 새로운 커밋이 존재 한 상태에서 merge 하는 경우
 - 각 브랜치에서 같은 파일을 건드렸다면 충돌이 발생할 수 있음
@@ -52,7 +52,7 @@ git switch 메인브랜치 // 현재위치 메인 브랜치
 git merge 분리된브랜치
 ```
 
-![rebase](../../img/rebase.JPG)
+<img src="../../img/git/rebase.JPG" />
 
 - 리베이스는 브랜치 분리 후 메인에서 커밋이 일어났을 경우
   메인의 최신 커밋을 기준으로 방금 분리 한것처럼 브랜치를 이동 시키는것.
