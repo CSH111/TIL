@@ -48,10 +48,6 @@
   <details>
   <summary>리액트</summary>
 
-  - 스트럭쳐
-
-    - [pages 폴더구조(index활용)](https://github.com/CSH111/TIL/blob/main/Front-End/React/structure/pages-with-index.md)
-
   - [이벤트 핸들러 네이밍](https://github.com/CSH111/TIL/blob/main/Front-End/React/naming-event-handler.md)
   - [삼항연산자의 대안](https://github.com/CSH111/TIL/blob/main/Front-End/React/ternary-operator.md)
   - [디바운싱 with useEffect](https://github.com/CSH111/TIL/blob/main/Front-End/React/useEffect-debouncing.md)
@@ -60,6 +56,16 @@
   - [reusable 폼 제작기(context 이용)](https://github.com/CSH111/TIL/blob/main/Front-End/React/reusable-form.md)
   - [레이아웃 by Route](https://github.com/CSH111/TIL/blob/main/Front-End/React/layout-with-router.md)
   - [글로벌 스타일 및 리셋](https://github.com/CSH111/TIL/blob/main/Front-End/React/default-global-style.md)
+
+  - 스트럭쳐
+    - [pages 폴더구조(index활용)](https://github.com/CSH111/TIL/blob/main/Front-End/React/structure/pages-with-index.md)
+
+  <br>
+
+  - styled-components
+    - [기초(class부여 방식, 컴포넌트 네스팅)](https://github.com/CSH111/TIL/blob/main/Front-End/React/styled-components/basic.md)
+
+  <br>
 
   </details>
 
