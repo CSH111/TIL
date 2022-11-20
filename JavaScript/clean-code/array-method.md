@@ -62,3 +62,14 @@ const arr = [1, 2, 1, 2, 3];
 const setArr = new Set(arr);
 const newArr = [...setArr]; // [1, 2, 3]
 ```
+
+<br>
+
+## 4. split 이용 일치 갯수 세기
+
+```js
+// 문자열중 a 의 갯수는?
+
+const str = "asdfa";
+str.split("a").length - 1;
+```

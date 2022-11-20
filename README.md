@@ -35,6 +35,7 @@
 
   - [초기설정](https://github.com/CSH111/TIL/blob/main/Front-End/css/reset.md)
   - [커스텀 프로퍼티(변수)](https://github.com/CSH111/TIL/blob/main/Front-End/css/custom-property.md)
+  - [SASS 부모선택자 &](https://github.com/CSH111/TIL/blob/main/Front-End/css/sass-parent-selector.md)
 
   </details>
 
@@ -63,7 +64,7 @@
   <br>
 
   - styled-components
-    - [기초(class부여 방식, 컴포넌트 네스팅)](https://github.com/CSH111/TIL/blob/main/Front-End/React/styled-components/basic.md)
+    - [class부여 방식, 컴포넌트 네스팅](https://github.com/CSH111/TIL/blob/main/Front-End/React/styled-components/basic.md)
 
   <br>
 
