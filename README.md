@@ -34,6 +34,8 @@
   <summary>CSS</summary>
 
   - [초기설정](https://github.com/CSH111/TIL/blob/main/Front-End/css/reset.md)
+  - [커스텀 프로퍼티(변수)](https://github.com/CSH111/TIL/blob/main/Front-End/css/custom-property.md)
+
   </details>
 
   <details>
@@ -103,3 +105,4 @@
   - 라우터돔항목 -> private route
   - HTML input 태그 pattern, required(+ autofocus) 속성 및 WEP API validation 연계 + css 가상성택자 :valid, :invalid
   - 상수파일 잠그기
+  - css media쿼리로 디바이스 구분 pointer:coarse, hover:none
