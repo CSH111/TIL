@@ -19,6 +19,7 @@
   - [tilt 연산자](https://github.com/CSH111/TIL/blob/main/JavaScript/etc/tilt.md)
   - [Date 객체 및 활용](https://github.com/CSH111/TIL/blob/main/JavaScript/etc/date-object.md)
   - [변수교환 트릭](https://github.com/CSH111/TIL/blob/main/JavaScript/etc/variable-exchange.md)
+  - [클로저](https://github.com/CSH111/TIL/blob/main/JavaScript/etc/closure.md)
 
   </details>
 
@@ -113,3 +114,4 @@
   - HTML input 태그 pattern, required(+ autofocus) 속성 및 WEP API validation 연계 + css 가상성택자 :valid, :invalid
   - 상수파일 잠그기
   - css media쿼리로 디바이스 구분 pointer:coarse, hover:none
+  - isolation, 레이어 구조
