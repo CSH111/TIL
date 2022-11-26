@@ -34,7 +34,7 @@ const MyComponent = () => {
 };
 
 const App = () => {
-  <MyComponent>안녕하세요</MyComponent>;
+  <StyledMyComponent>안녕하세요</StyledMyComponent>;
 };
 ```
 
