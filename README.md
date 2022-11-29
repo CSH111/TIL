@@ -37,6 +37,8 @@
   - [초기설정](https://github.com/CSH111/TIL/blob/main/Front-End/css/reset.md)
   - [커스텀 프로퍼티(변수)](https://github.com/CSH111/TIL/blob/main/Front-End/css/custom-property.md)
   - [SASS 부모선택자 &](https://github.com/CSH111/TIL/blob/main/Front-End/css/sass-parent-selector.md)
+  - [애니메이션](https://github.com/CSH111/TIL/blob/main/Front-End/css/animation.md)
+  - [border-radius 트릭](https://github.com/CSH111/TIL/blob/main/Front-End/css/border-radius.md)
 
   </details>
 
