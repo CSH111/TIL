@@ -1,0 +1,88 @@
+{
+  "workbench.colorCustomizations": {
+    //
+    "editorLineNumber.foreground": "#707070",
+    "editorLineNumber.activeForeground": "#eaeaea",
+
+    //sidebar filename Color
+    "gitDecoration.modifiedResourceForeground": "#e9e9e9",
+    "sideBar.foreground": "#b4b4b4",
+    "gitDecoration.ignoredResourceForeground": "#808080",
+
+    //tab
+    "tab.border": "#7c7c84c1",
+    "tab.inactiveForeground": "#b4b4b4",
+    "tab.activeBackground": "#85858539",
+    "tab.activeBorder": "#7c7c84c1",
+    "tab.activeBorderTop": "#7c7c84c1"
+  },
+  "editor.wordWrap": "on",
+  "editor.tabSize": 2,
+  "workbench.iconTheme": "material-icon-theme",
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "workbench.editor.enablePreview": false,
+
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll": true
+  // },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "files.eol": "\n",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // "prettier.semi": false,
+  // "prettier.arrowParens": "always",
+  // "prettier.arrowParens": "avoid",
+  // "prettier.printWidth": 100,
+  // "prettier.tabWidth": 4,
+
+  "indentRainbow.tabmixColor": "rgba(128,32,96,0.6)",
+  "indentRainbow.colors": [
+    "rgba(255,255,0,0.2)",
+    "rgba(255,127,255,0.2)",
+    "rgba(80,255,80,0.2)",
+    "rgba(255,200,255,0.2)"
+  ],
+  "launch": {
+    "configurations": [],
+    "compounds": []
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "editor.tokenColorCustomizations": {
+    "comments": "#00ff2f"
+  },
+  "liveSassCompile.settings.generateMap": false,
+
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded", //compressed
+      "extensionName": ".css",
+      "savePath": "./css"
+    }
+  ],
+
+  "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
+  "liveSassCompile.settings.includeItems": [],
+  "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
+  "liveServer.settings.donotShowInfoMsg": true,
+  "vscode-color-picker.languages": ["javascriptreact", "python", "javascript", "typescript"],
+
+  "errorLens.statusBarIconsEnabled": true,
+  "errorLens.gutterIconsEnabled": true,
+  "errorLens.gutterIconSet": "circle",
+  "explorer.confirmDragAndDrop": false,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "prettier.printWidth": 100,
+  "remote.SSH.remotePlatform": {
+    "csh111.mini_shopping_game.draft---festive-sutherland.csb": "linux"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "update.mode": "manual",
+  "workbench.colorTheme": "Community Material Theme"
+  // "json.schemas": [{ "exclude": ["node_modules"] }]
+}
