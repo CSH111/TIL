@@ -1,0 +1,145 @@
+// Place your key bindings in this file to override the defaults
+[
+  //파일생성
+  // {
+  //   "key": "ctrl+n",
+  //   "command": "explorer.newFile",
+  //   "when": "explorerViewletFocus"
+  // },
+  // {
+  //   "key": "enter", // "cmd+n" on mac
+  //   "command": "editor.action.webvieweditor.findNext",
+  //   "when": "findInputFocussed"
+  // },
+  {
+    "key": "ctrl+n", // "cmd+n" on mac
+    "command": "extension.advancedNewFile"
+  },
+  //폴더생성
+  {
+    "key": "ctrl+shift+n",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletFocus"
+  },
+
+  //커서이동 up 10
+  {
+    "key": "ctrl+up",
+    "command": "cursorMove",
+    "args": {
+      "to": "up",
+      "by": "line",
+      "value": 10
+    },
+    "when": "editorTextFocus"
+  },
+
+  //커서이동 down 10
+  {
+    "key": "ctrl+down",
+    "command": "cursorMove",
+    "args": {
+      "to": "down",
+      "by": "line",
+      "value": 10
+    },
+    "when": "editorTextFocus"
+  },
+
+  //커서이동 up 3
+  {
+    "key": "ctrl+alt+up",
+    "command": "cursorMove",
+    "args": {
+      "to": "up",
+      "by": "line",
+      "value": 3
+    },
+    "when": "editorTextFocus"
+  },
+
+  //커서이동 down 3
+  {
+    "key": "ctrl+alt+down",
+    "command": "cursorMove",
+    "args": {
+      "to": "down",
+      "by": "line",
+      "value": 3
+    },
+    "when": "editorTextFocus"
+  },
+
+  // next 터미널
+  {
+    "key": "ctrl+shift+]",
+    "when": "terminalFocus",
+    "command": "workbench.action.terminal.focusNext"
+  },
+
+  //previous 터미널
+  {
+    "key": "ctrl+shift+[",
+    "when": "terminalFocus",
+    "command": "workbench.action.terminal.focusPrevious"
+  },
+  //clear 터미널
+  {
+    "key": "ctrl+shift+c",
+    "when": "terminalFocus",
+    "command": "workbench.action.terminal.clear"
+  },
+  //kill 터미널
+  {
+    "key": "ctrl+shift+k",
+    "when": "terminalFocus",
+    "command": "workbench.action.terminal.kill"
+  },
+  {
+    "key": "alt+f12",
+    "command": "editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "f12",
+    "command": "-editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "f12",
+    "command": "editor.action.peekDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+  },
+  {
+    "key": "alt+f12",
+    "command": "-editor.action.peekDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+  },
+  {
+    "key": "ctrl+shift+space",
+    "command": "code-runner.run"
+  },
+  {
+    "key": "ctrl+alt+n",
+    "command": "-code-runner.run"
+  },
+  {
+    "key": "shift+alt+oem_plus",
+    "command": "references-view.findReferences",
+    "when": "editorHasReferenceProvider"
+  },
+  {
+    "key": "shift+alt+f12",
+    "command": "-references-view.findReferences",
+    "when": "editorHasReferenceProvider"
+  },
+  {
+    "key": "f3",
+    "command": "-editor.action.nextMatchFindAction",
+    "when": "editorFocus"
+  },
+  {
+    "key": "enter",
+    "command": "-extension.insertColonOrSemiColon"
+  }
+]
