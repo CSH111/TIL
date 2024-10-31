@@ -1,24 +1,30 @@
 {
   "workbench.colorCustomizations": {
-    "minimap.findMatchHighlight": "#ff5eccd5",
+    "minimap.findMatchHighlight": "#65e1f4e1",
     "editorSuggestWidget.selectedBackground": "#20749b",
     "editorSuggestWidget.background": "#3b3b3b",
     "editorLineNumber.foreground": "#707070",
     "editorLineNumber.activeForeground": "#eaeaea",
     "editor.foldBackground": "#0a3882f1",
-    "editor.findMatchHighlightBackground": "#990012f1",
-    "editor.findMatchHighlightForeground": "#fcf6f5e2",
-    "editor.findMatchBackground": "#f15fe0",
-    "editor.findMatchForeground": "#fcf6f5",
+    "editorHoverWidget.background": "#393939",
+    "editor.findMatchBorder": "#65e1f4",
+    "editor.findMatchHighlightBorder": "#65e1f4",
+
+    // "editor.findMatchForeground": "#c41dd4",
+    // "editor.findMatchHighlightBackground": "#65e1f493",
+    "editor.findMatchBackground": "#ffffff1e", // 현재
+    // "editor.findMatchHighlightBackground": "#ffffff0f", // 전체
+
+    // "editor.findMatchHighlightForeground": "#e53e3e",
     "editor.lineHighlightBackground": "#46464648",
     "quickInput.background": "#000000",
     "quickInput.foreground": "#ffffff",
     "quickInputList.focusForeground": "#ffffff",
     "quickInputList.focusBackground": "#424242",
     "statusBar.foreground": "#afafaf",
-    "terminal.findMatchBackground": "#63d7a39b",
+    "terminal.findMatchBackground": "#65e1f4e1",
     "terminal.selectionBackground": "#73737373",
-    "selection.background": "#79c5c5dc",
+    "selection.background": "#79c5c58e",
     "editorWidget.background": "#454545",
     "settings.textInputBackground": "#323232",
     "settings.checkboxBackground": "#323232",
