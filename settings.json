@@ -83,6 +83,14 @@
   "emmet.triggerExpansionOnTab": true,
   "editor.tokenColorCustomizations": {
     "comments": "#00ff2f"
+    "textMateRules": [
+      {
+        "scope": "comment, punctuation.definition.comment.js, punctuation.definition.comment.ts, punctuation.definition.comment.tsx, punctuation.definition.comment.xml, punctuation.definition.comment.json",
+        "settings": {
+          "foreground": "#267332"
+        }
+      }
+    ]
   },
   "liveSassCompile.settings.generateMap": false,
 
