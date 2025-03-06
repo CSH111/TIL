@@ -1,16 +1,12 @@
 // Place your key bindings in this file to override the defaults
 [
   //파일생성
-  // {
-  //   "key": "ctrl+n",
-  //   "command": "explorer.newFile",
-  //   "when": "explorerViewletFocus"
-  // },
-  // {
-  //   "key": "enter", // "cmd+n" on mac
-  //   "command": "editor.action.webvieweditor.findNext",
-  //   "when": "findInputFocussed"
-  // },
+  {
+    "key": "ctrl+n",
+    "command": "explorer.newFile",
+    "when": "explorerViewletFocus"
+  },
+
   {
     "key": "ctrl+n", // "cmd+n" on mac
     "command": "extension.advancedNewFile"
@@ -133,13 +129,92 @@
     "command": "-references-view.findReferences",
     "when": "editorHasReferenceProvider"
   },
+  // {
+  //   "key": "enter",
+  //   "command": "-extension.insertColonOrSemiColon"
+  // },
+  {
+    "key": "ctrl+shift+a",
+    "command": "editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "-editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+  },
+  {
+    "key": "ctrl+shift+l",
+    "command": "extension.clog",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+oem_2",
+    "command": "-extension.clog",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "enter",
+    "command": "-editor.action.nextMatchFindAction",
+    "when": "editorFocus"
+  },
+  {
+    "key": "enter", // "cmd+n" on mac
+    "command": "editor.action.webvieweditor.findNext",
+    "when": "findInputFocussed"
+  },
+  {
+    "key": "enter",
+    "command": "-editor.action.nextMatchFindAction",
+    "when": "editorFocus && findInputFocussed"
+  },
   {
     "key": "f3",
     "command": "-editor.action.nextMatchFindAction",
     "when": "editorFocus"
   },
   {
+    "key": "shift+f3",
+    "command": "-editor.action.previousMatchFindAction",
+    "when": "editorFocus"
+  },
+
+  // {
+  //   "key": "down",
+  //   "command": "editor.action.nextMatchFindAction",
+  //   "when": "editorFocus && findInputFocussed"
+  // },
+
+  // {
+  //   "key": "up",
+  //   "command": "editor.action.previousMatchFindAction",
+  //   "when": "editorFocus && findInputFocussed"
+  // }
+  {
     "key": "enter",
-    "command": "-extension.insertColonOrSemiColon"
+    "command": "editor.action.extensioneditor.findNext",
+    "when": "webviewFindWidgetFocused && !editorFocus && activeEditor == 'workbench.editor.extension'"
+  },
+  {
+    "key": "shift+enter",
+    "command": "editor.action.extensioneditor.findPrevious",
+    "when": "webviewFindWidgetFocused && !editorFocus && activeEditor == 'workbench.editor.extension'"
+  },
+  {
+    "key": "enter",
+    "command": "editor.action.nextMatchFindAction",
+    "when": "editorFocus && findInputFocussed"
+  },
+  
+  // 블록주석
+  {
+    "key": "ctrl+shift+oem_2",
+    "command": "editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+a",
+    "command": "-editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
   }
 ]
