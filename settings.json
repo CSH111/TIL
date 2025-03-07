@@ -1,4 +1,7 @@
 {
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "javascript.preferences.importModuleSpecifier": "relative",
+  
   "workbench.colorCustomizations": {
     "minimap.findMatchHighlight": "#65e1f4e1",
     "editorSuggestWidget.selectedBackground": "#20749b",
